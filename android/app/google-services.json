@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "381438344228",
+    "project_id": "learn-push-notifications-df837",
+    "storage_bucket": "learn-push-notifications-df837.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381438344228:android:af84abd04db5091b3a2cb1",
+        "android_client_info": {
+          "package_name": "com.mycompany.pushnotifications"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-sQZT_SicrTULyx6SpeLies_htuzI_-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
