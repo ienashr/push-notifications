@@ -1,3 +1,5 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
+
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/backend/push_notifications/push_notifications_util.dart';
@@ -44,6 +46,10 @@ class _HomeWidgetState extends State<HomeWidget> {
 
   @override
   Widget build(BuildContext context) {
+    FirebaseMessaging.instance
+        .getToken()
+        .then((value) => print('token: $value'));
+
     return GestureDetector(
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
@@ -108,7 +114,7 @@ class _HomeWidgetState extends State<HomeWidget> {
 
                       context.goNamedAuth('Auth2', context.mounted);
                     },
-                    text: 'logout',
+                    text: "logout",
                     options: FFButtonOptions(
                       height: 40.0,
                       padding:
